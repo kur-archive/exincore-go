@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/MixinNetwork/bot-api-go-client v0.0.0-20190412100532-6510ef1f77d1
-	github.com/MixinNetwork/go-number v0.0.0-20180814121220-f48e2574d9ef // indirect
+	github.com/MixinNetwork/go-number v0.0.0-20180814121220-f48e2574d9ef
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
 	github.com/gofrs/uuid v3.2.0+incompatible
 	github.com/gorilla/websocket v1.4.0 // indirect

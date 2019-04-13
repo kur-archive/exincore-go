@@ -26,7 +26,7 @@ type EClient struct {
 	privateKey  string
 }
 
-func New(userUuid, sessionUuid, pin, pinToken, privateKey string) *EClient {
+func NewExinCoreClient(userUuid, sessionUuid, pin, pinToken, privateKey string) *EClient {
 	return &EClient{
 		userUuid:    userUuid,
 		sessionUuid: sessionUuid,
@@ -92,11 +92,11 @@ func (e *EClient) ReadPair(base, exchange string) (*[]PairInfo, error) {
 		Message string     `json:"message"`
 	}
 
-	err = json.Unmarshal(body, resp)
+	err = json.Unmarshal(body, &resp)
 	if err != nil {
 		return nil, err
 	}
-	if resp.Code != 0 || resp.Message != "success" {
+	if resp.Code != 0 || resp.Message != "" {
 		return nil, errors.New(resp.Message)
 	}
 
