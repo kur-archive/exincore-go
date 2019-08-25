@@ -5,7 +5,7 @@ ExinCore golang client
 ## Installation
 
 ```bash
-go get https://github.com/Kurisu-package/exincore-go
+go get github.com/Kurisu-package/exincore-go
 ```
 
 ## Example
