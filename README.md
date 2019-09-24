@@ -41,3 +41,5 @@ client := NewExinCoreClient("", "", "", "", "")
 info, err := client.ReadPair(base, "")
 ```
 
+
+
