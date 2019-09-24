@@ -102,3 +102,5 @@ func (e *EClient) ReadPair(base, exchange string) (*[]PairInfo, error) {
 
 	return &resp.Data, nil
 }
+
+
