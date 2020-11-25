@@ -14,8 +14,8 @@ import (
 )
 
 const (
-	exincoreUri = "https://exinone.com/exincore/"
-	exincore    = "61103d28-3ac2-44a2-ae34-bd956070dab1"
+	exincoreUri     = "https://exinone.com/exincore/"
+	exincoreBotUuid = "61103d28-3ac2-44a2-ae34-bd956070dab1"
 )
 
 type EClient struct {
@@ -60,7 +60,7 @@ func (e *EClient) CreateOrder(ctx context.Context, base, exchange, traceId strin
 
 	err := bot.CreateTransfer(ctx, &bot.TransferInput{
 		AssetId:     base,
-		RecipientId: exincore,
+		RecipientId: exincoreBotUuid,
 		Amount:      number.FromFloat(amount),
 		TraceId:     traceId,
 		Memo:        memo,
@@ -102,6 +102,3 @@ func (e *EClient) ReadPair(base, exchange string) (*[]PairInfo, error) {
 
 	return &resp.Data, nil
 }
-
-
-
