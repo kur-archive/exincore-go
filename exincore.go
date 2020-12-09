@@ -58,7 +58,7 @@ func (e *EClient) CreateOrder(ctx context.Context, base, exchange, traceId strin
 	pack, _ := msgpack.Marshal(OrderAction)
 	memo := base64.StdEncoding.EncodeToString(pack)
 
-	err := bot.CreateTransfer(ctx, &bot.TransferInput{
+	_, err := bot.CreateTransfer(ctx, &bot.TransferInput{
 		AssetId:     base,
 		RecipientId: exincoreBotUuid,
 		Amount:      number.FromFloat(amount),
