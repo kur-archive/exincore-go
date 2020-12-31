@@ -6,7 +6,7 @@ require (
 	github.com/MixinNetwork/bot-api-go-client v1.2.0
 	github.com/MixinNetwork/go-number v0.0.0-20180814121220-f48e2574d9ef
 	github.com/MixinNetwork/mixin v0.9.0 // indirect
-	github.com/gofrs/uuid v3.3.0+incompatible
+	github.com/gofrs/uuid v3.4.0+incompatible
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/stretchr/testify v1.6.1 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
