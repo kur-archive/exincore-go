@@ -3,7 +3,7 @@ module github.com/Kurisu-package/exincore-go
 go 1.12
 
 require (
-	github.com/MixinNetwork/bot-api-go-client v1.2.0
+	github.com/MixinNetwork/bot-api-go-client v1.2.1
 	github.com/MixinNetwork/go-number v0.0.0-20180814121220-f48e2574d9ef
 	github.com/MixinNetwork/mixin v0.9.0 // indirect
 	github.com/gofrs/uuid v3.4.0+incompatible
